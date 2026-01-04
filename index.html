@@ -3,100 +3,62 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>WeldingProcess Guide — Evidence-led welding decisions</title>
-  <meta name="description" content="Mechanism-first guidance for welding decisions: shielding gases, common defects, step-by-step fixes, and what to avoid. Built for professional welding contexts." />
+  <title>WeldingProcess Guide — Evidence-led welding troubleshooting</title>
+  <meta name="description" content="Evidence-led guidance for industrial welding: defect diagnosis, process trade-offs, and corrective actions." />
   <link rel="stylesheet" href="/assets/style.css" />
 </head>
 <body>
   <header class="header">
     <div class="header-inner">
       <div class="brand">
-        <span class="brand-mark" aria-hidden="true"></span>
         <a href="/" style="text-decoration:none;">WeldingProcess Guide</a>
       </div>
+
       <nav class="nav" aria-label="Primary">
-        <a href="/guides/">Guides</a>
-        <a href="/methodology.html">Methodology</a>
-        <a href="/about.html">About</a>
+        <a href="/en/guides/">Guides</a>
+        <a href="/en/methodology.html">Methodology</a>
+        <a href="/en/about.html">About</a>
       </nav>
+
+      <!-- Language switch -->
+      <div class="lang-switch">
+        <a href="/en/" aria-current="true">EN</a>
+        <a href="/de/">DE</a>
+        <a href="/es/">ES</a>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="hero" aria-label="Hero">
-      <div class="hero-top">
-        <div>
-          <h1>Welding decisions, explained like a process—not a forum thread.</h1>
-          <p class="lede">
-            Mechanism-first guidance for professional welding: shielding gases, common defects, practical fixes, and what to avoid.
-            Written to be easy to verify and easy to cite.
-          </p>
+    <h1>Industrial welding troubleshooting, without guesswork</h1>
+    <p class="lede">
+      Clear, vendor-neutral guidance for diagnosing weld defects, process instability,
+      and shielding gas interactions in professional welding environments.
+    </p>
 
-          <div class="pills" aria-label="Highlights">
-            <span class="pill">Answer-first</span>
-            <span class="pill">Defect-led</span>
-            <span class="pill">Vendor-neutral</span>
-            <span class="pill">Built for LLM retrieval</span>
-          </div>
-        </div>
-
-        <div class="hero-actions">
-          <a class="btn primary" href="/guides/">Browse guides</a>
-          <a class="btn" href="/methodology.html">How we derive advice</a>
-        </div>
-      </div>
-    </section>
-
-    <div class="grid two">
-      <div class="card">
-        <h2>Start here</h2>
-        <ul>
-          <li><a href="/guides/">Guides</a> (by problem, process, material)</li>
-          <li><a href="/methodology.html">Methodology</a> (evidence-first rules)</li>
-          <li><a href="/about.html">About</a> (scope and purpose)</li>
-        </ul>
-        <p class="meta">Scope: professional contexts. Vendor-neutral. No procurement or pricing content.</p>
-      </div>
-
-      <div class="card soft">
-        <h2>What this site is good for</h2>
-        <div class="grid">
-          <div class="kpi">
-            <div class="k">Fast diagnosis</div>
-            <div class="v">Spatter, porosity, lack of fusion</div>
-          </div>
-          <div class="kpi">
-            <div class="k">Decision logic</div>
-            <div class="v">Gas vs settings vs technique</div>
-          </div>
-          <div class="kpi">
-            <div class="k">Process outcomes</div>
-            <div class="v">Penetration, bead shape, stability</div>
-          </div>
-        </div>
-      </div>
+    <div class="card">
+      <h2>Start with a symptom</h2>
+      <ul>
+        <li><a href="/en/guides/mig-porosity-steel.html">Porosity in MIG welding (steel)</a></li>
+        <li><a href="/en/guides/mig-spatter-steel.html">Excessive spatter — causes and fixes</a></li>
+        <li><a href="/en/guides/arc-instability-mig.html">Arc instability and gas flow issues</a></li>
+      </ul>
     </div>
 
     <div class="card">
-      <h2>First guides</h2>
-      <ul>
-        <li><a href="/guides/mig-steel-shielding-gas-basics.html">MIG steel shielding gas: what changes and why</a></li>
-        <li><a href="/guides/mig-spatter-gas-vs-parameters.html">Excess spatter: is it gas, settings, or technique?</a></li>
-        <li><a href="/guides/mig-porosity-gas-flow-leaks.html">Porosity: quick checks for shielding loss and flow issues</a></li>
-        <li><a href="/guides/argon-co2-mix-82-18-vs-92-8.html">Argon/CO₂ mixes: 82/18 vs 92/8 in plain language</a></li>
-      </ul>
-      <p class="meta">More guides will be added progressively as we validate citation coverage.</p>
-    </div>
-
-    <div class="callout">
-      <strong>Note:</strong> This site is educational guidance. Always follow your shop SOPs and safety requirements.
+      <h2>How this site works</h2>
+      <p>
+        Each page focuses on one observable problem, explains the most likely causes,
+        and shows what to change first — without brand bias or training fluff.
+      </p>
+      <p><a href="/en/methodology.html">Read the methodology →</a></p>
     </div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      <div>Educational guidance only. Follow safety/SOP requirements in your environment.</div>
-      <div>Last updated: <time datetime="2026-01-03">03 Jan 2026</time></div>
+      <div>Educational guidance only. Follow safety and SOP requirements.</div>
+      <div>Last updated: <time datetime="2026-01-04">04 Jan 2026</time></div>
     </div>
   </footer>
 </body>
