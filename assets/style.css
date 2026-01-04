@@ -295,3 +295,32 @@ kbd{
   gap: 12px;
   flex-wrap: wrap;
 }
+
+/* Language switch (EN / DE / ES) */
+.lang-switch{
+  display: inline-flex;
+  gap: 6px;
+  padding: 6px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.7);
+}
+
+.lang-switch a{
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--muted);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.lang-switch a[aria-current="true"]{
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  border: 1px solid transparent;
+}
+
+.lang-switch a:hover{
+  background: var(--panel);
+  color: var(--ink);
+}
