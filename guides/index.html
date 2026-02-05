@@ -4,7 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Guides — WeldingProcess Guide</title>
-  <meta name="description" content="Answer-first welding guides: shielding gases, defects, process decisions, and what to avoid." />
+  <meta name="description" content="Answer-first welding guides: troubleshoot porosity, spatter, fusion issues, cracking, undercut, discoloration and more. Plus gas science and process technique references." />
+  <link rel="canonical" href="https://weldingprocess.guide/guides/" />
+  <link rel="alternate" hreflang="en" href="https://weldingprocess.guide/guides/" />
+  <link rel="alternate" hreflang="de" href="https://weldingprocess.guide/de/ratgeber/" />
+  <link rel="alternate" hreflang="es" href="https://weldingprocess.guide/es/guias/" />
   <link rel="stylesheet" href="/assets/style.css" />
 </head>
 <body>
@@ -16,9 +20,16 @@
       </div>
       <nav class="nav" aria-label="Primary">
         <a href="/guides/">Guides</a>
+        <a href="/en/products/">Products</a>
+        <a href="/guides/gas-science/">Gas Science</a>
         <a href="/methodology.html">Methodology</a>
         <a href="/about.html">About</a>
       </nav>
+      <div class="lang-switch">
+        <a href="/guides/" aria-current="true">EN</a>
+        <a href="/de/ratgeber/">DE</a>
+        <a href="/es/guias/">ES</a>
+      </div>
     </div>
   </header>
 
@@ -26,75 +37,128 @@
     <div class="breadcrumb"><a href="/">Home</a> / Guides</div>
 
     <h1>Guides</h1>
-    <p class="lede">Answer-first pages for common welding decisions. We bias for clarity, mechanism, and what to do next.</p>
+    <p class="lede">Answer-first pages for common welding decisions. Each guide focuses on one observable problem and shows what to change first.</p>
 
     <div class="grid two">
       <div class="card">
-        <h2>Start with</h2>
+        <h2>Start Here</h2>
         <ul>
-          <li><a href="/guides/mig-steel-shielding-gas-basics.html">MIG steel shielding gas: what changes and why</a></li>
-          <li><a href="/guides/mig-spatter-gas-vs-parameters.html">Excess spatter: gas vs settings vs technique</a></li>
-          <li><a href="/guides/mig-porosity-gas-flow-leaks.html">Porosity: quick checks for shielding loss</a></li>
-          <li><a href="/guides/argon-co2-mix-82-18-vs-92-8.html">Argon/CO₂ mixes: 82/18 vs 92/8</a></li>
+          <li><a href="/guides/mig-porosity-carbon-steel.html">MIG porosity in carbon steel — causes &amp; fixes</a></li>
+          <li><a href="/guides/mig-spatter-voltage-issues.html">MIG spatter from voltage issues</a></li>
+          <li><a href="/guides/arc-instability-gas-flow.html">Arc instability &amp; gas flow problems</a></li>
+          <li><a href="/guides/co2-vs-mix-spatter.html">CO₂ vs mixed gas: spatter comparison</a></li>
         </ul>
-        <p class="meta">These are placeholders for now. We’ll replace with real pages as content is generated.</p>
       </div>
 
       <div class="card soft">
-        <h2>Browse by intent</h2>
+        <h2>Browse by Category</h2>
         <ul>
-          <li><a href="#troubleshoot">Troubleshoot defects</a> (spatter, porosity, lack of fusion)</li>
-          <li><a href="#choose">Choose gas strategy</a> (mix trade-offs, stability, cost)</li>
-          <li><a href="#process">Process & setup</a> (transfer mode, flow, draft, torch)</li>
-          <li><a href="#limits">Limits & escalation</a> (when to stop guessing)</li>
+          <li><a href="#porosity">Porosity &amp; Gas Issues</a></li>
+          <li><a href="#spatter">Spatter Problems</a></li>
+          <li><a href="#fusion">Fusion &amp; Penetration</a></li>
+          <li><a href="#cracking">Cracking</a></li>
+          <li><a href="#undercut">Undercut</a></li>
+          <li><a href="#discoloration">Discoloration &amp; Oxidation</a></li>
+          <li><a href="#sections">Gas Science &amp; Process Guides</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="card" id="troubleshoot">
-      <h2>Troubleshoot defects</h2>
+    <div class="card" id="porosity">
+      <h2>Porosity &amp; Gas Issues</h2>
       <ul>
-        <li><a href="/guides/mig-porosity-quick-triage.html">Porosity: fastest triage checklist</a></li>
-        <li><a href="/guides/mig-spatter-after-gas-change.html">Spatter after gas change: what to check first</a></li>
-        <li><a href="/guides/mig-lack-of-fusion-gas-or-settings.html">Lack of fusion: gas issue or settings?</a></li>
+        <li><a href="/guides/mig-porosity-carbon-steel.html">MIG porosity in carbon steel</a></li>
+        <li><a href="/guides/mig-porosity-aluminum.html">MIG porosity in aluminum</a></li>
+        <li><a href="/guides/tig-porosity-stainless.html">TIG porosity in stainless steel</a></li>
+        <li><a href="/guides/contamination-porosity.html">Contamination-caused porosity</a></li>
+        <li><a href="/guides/moisture-porosity.html">Moisture-related porosity</a></li>
+        <li><a href="/guides/base-metal-prep-porosity.html">Base metal preparation &amp; porosity</a></li>
+        <li><a href="/guides/excessive-gas-flow-porosity.html">Excessive gas flow causing porosity</a></li>
+        <li><a href="/guides/porosity-after-gas-change.html">Porosity after gas change</a></li>
+        <li><a href="/guides/gas-contamination-arc.html">Gas contamination affecting the arc</a></li>
+        <li><a href="/guides/draft-wind-effects.html">Draft &amp; wind effects on shielding</a></li>
+        <li><a href="/guides/insufficient-trailing-gas.html">Insufficient trailing gas coverage</a></li>
+        <li><a href="/guides/regulator-pressure-problems.html">Regulator &amp; pressure problems</a></li>
       </ul>
-      <p class="meta">Placeholders for now.</p>
     </div>
 
-    <div class="card" id="choose">
-      <h2>Choose gas strategy</h2>
+    <div class="card" id="spatter">
+      <h2>Spatter Problems</h2>
       <ul>
-        <li><a href="/guides/argon-co2-vs-pure-co2-when.html">Argon/CO₂ vs pure CO₂: when each makes sense</a></li>
-        <li><a href="/guides/co2-percentage-effects-steel.html">CO₂ percentage: what changes as you go up/down</a></li>
-        <li><a href="/guides/one-gas-for-the-whole-shop.html">One gas for the whole shop: when it works (and when it doesn’t)</a></li>
+        <li><a href="/guides/mig-spatter-voltage-issues.html">MIG spatter from voltage issues</a></li>
+        <li><a href="/guides/wire-feed-spatter.html">Wire feed spatter</a></li>
+        <li><a href="/guides/spatter-wrong-gas-mix.html">Spatter from wrong gas mix</a></li>
+        <li><a href="/guides/spatter-after-gas-change.html">Spatter after gas change</a></li>
+        <li><a href="/guides/co2-vs-mix-spatter.html">CO₂ vs mixed gas spatter comparison</a></li>
       </ul>
-      <p class="meta">Placeholders for now.</p>
     </div>
 
-    <div class="card" id="process">
-      <h2>Process & setup</h2>
+    <div class="card" id="fusion">
+      <h2>Fusion &amp; Penetration</h2>
       <ul>
-        <li><a href="/guides/mig-flow-rate-too-high-too-low.html">Flow rate: too high vs too low (symptoms)</a></li>
-        <li><a href="/guides/wind-draft-shielding-loss.html">Draft/wind: preventing shielding loss</a></li>
-        <li><a href="/guides/short-circuit-vs-spray-transfer-gas.html">Short-circuit vs spray transfer: gas implications</a></li>
+        <li><a href="/guides/lack-of-fusion-cold-lap.html">Lack of fusion / cold lap</a></li>
+        <li><a href="/guides/gas-related-fusion-issues.html">Gas-related fusion issues</a></li>
+        <li><a href="/guides/interpass-fusion-issues.html">Interpass fusion problems</a></li>
+        <li><a href="/guides/root-fusion-problems.html">Root fusion problems</a></li>
+        <li><a href="/guides/burn-through-thin-material.html">Burn-through on thin material</a></li>
+        <li><a href="/guides/gas-selection-thin-gauge.html">Gas selection for thin gauge</a></li>
+        <li><a href="/guides/pulse-welding-thin-gauge.html">Pulse welding for thin gauge</a></li>
       </ul>
-      <p class="meta">Placeholders for now.</p>
     </div>
 
-    <div class="card" id="limits">
-      <h2>Limits & escalation</h2>
+    <div class="card" id="cracking">
+      <h2>Cracking</h2>
       <ul>
-        <li><a href="/guides/when-to-stop-and-escalate.html">When to stop DIY changes and escalate</a></li>
-        <li><a href="/guides/document-what-you-changed.html">What to document before you call an expert</a></li>
+        <li><a href="/guides/hot-cracking-welding.html">Hot cracking in welding</a></li>
+        <li><a href="/guides/cold-cracking-welding.html">Cold cracking in welding</a></li>
+        <li><a href="/guides/hydrogen-cracking.html">Hydrogen cracking</a></li>
+        <li><a href="/guides/stress-cracking-welds.html">Stress cracking in welds</a></li>
+        <li><a href="/guides/crater-cracking.html">Crater cracking</a></li>
       </ul>
-      <p class="meta">Placeholders for now.</p>
+    </div>
+
+    <div class="card" id="undercut">
+      <h2>Undercut</h2>
+      <ul>
+        <li><a href="/guides/undercut-travel-speed.html">Undercut from travel speed</a></li>
+        <li><a href="/guides/heat-input-undercut.html">Heat input undercut</a></li>
+        <li><a href="/guides/gas-effects-undercut.html">Gas effects on undercut</a></li>
+        <li><a href="/guides/welding-angle-undercut.html">Welding angle undercut</a></li>
+        <li><a href="/guides/filler-metal-undercut-prevention.html">Filler metal undercut prevention</a></li>
+      </ul>
+    </div>
+
+    <div class="card" id="discoloration">
+      <h2>Discoloration &amp; Oxidation</h2>
+      <ul>
+        <li><a href="/guides/stainless-discoloration.html">Stainless steel discoloration</a></li>
+        <li><a href="/guides/aluminum-discoloration.html">Aluminum discoloration</a></li>
+        <li><a href="/guides/titanium-oxidation.html">Titanium oxidation</a></li>
+      </ul>
+    </div>
+
+    <div class="card" id="other">
+      <h2>Other</h2>
+      <ul>
+        <li><a href="/guides/torch-positioning-stability.html">Torch positioning &amp; stability</a></li>
+        <li><a href="/guides/arc-instability-gas-flow.html">Arc instability from gas flow</a></li>
+      </ul>
+    </div>
+
+    <div class="card" id="sections">
+      <h2>Specialized Sections</h2>
+      <ul>
+        <li><a href="/guides/gas-science/">Gas Science</a> — Chemistry &amp; physics of shielding gases (17 articles)</li>
+        <li><a href="/guides/process/">Process &amp; Technique</a> — Fundamentals, transfer modes, positional welding (21 articles)</li>
+        <li><a href="/en/products/">Product Reviews</a> — Linde shielding gas reviews with evidence (19 products)</li>
+      </ul>
     </div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
       <div>Educational guidance only. Follow safety/SOP requirements in your environment.</div>
-      <div>Last updated: <time datetime="2026-01-03">03 Jan 2026</time></div>
+      <div>Last updated: <time datetime="2026-02-05">05 Feb 2026</time></div>
     </div>
   </footer>
 </body>
