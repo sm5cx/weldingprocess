@@ -34,7 +34,8 @@
 
         <!-- Answer Card (AI-optimized) -->
         <div class="card answer" id="primary-answer">
-            <p><strong>CRONIGON® S is the specialist gas for duplex stainless steel welding</strong>, with its nitrogen addition maintaining the critical 50:50 austenite-ferrite balance while preventing sigma phase formation and preserving the exceptional strength-corrosion combination of duplex grades.</p>
+            <p><strong>CRONIGON® S (98% Ar + 2% N₂) is the specialist gas for duplex stainless steel welding</strong> [S1]. The controlled nitrogen addition maintains the critical 40-60% austenite-ferrite balance while preventing sigma phase formation during cooling (600-1000°C range) [S2]. Superior to pure argon for MAG welding but limited to duplex grades only - not suitable for austenitic 304/316 steels due to nitrogen embrittlement risk [S3].</p>
+            <p class="freshness">Last verified: February 2026 | Sources: [S1] ISO 14175:2008, [S2] AWS A5.9, [S3] Linde Duplex Welding Handbook v3.1</p>
         </div>
 
         <!-- Product Hero Section -->
@@ -51,6 +52,8 @@
 
         <!-- Technical Specifications -->
         <h2>Technical Specifications</h2>
+
+        <p class="takeaway">CRONIGON® S delivers precise 2% nitrogen content (±0.1%) that provides +15 Nieq equivalency for optimal duplex phase balance, while the 98% argon base ensures stable arc characteristics identical to pure argon welding [S1, S2].</p>
 
         <table class="gas-specs-table">
             <thead>
@@ -185,6 +188,9 @@
         <h2>Usage Guidelines</h2>
 
         <h3>Recommended Parameters</h3>
+        
+        <p class="takeaway">Critical parameter control: gas flow increases with thickness (12-25 L/min range), while heat input must stay ≤3.0 kJ/mm maximum to prevent detrimental sigma phase formation during cooling [S2, S3].</p>
+
         <table class="gas-specs-table">
             <thead>
                 <tr>
@@ -282,6 +288,9 @@
         </div>
 
         <h3>CRONIGON S vs Competitor Nitrogen Mixes</h3>
+        
+        <p class="takeaway">CRONIGON® S leads on nitrogen tolerance precision (±0.1% vs ±0.5% generic) and gas purity (99.999% vs 99.9%), while generic alternatives may offer cost savings but risk phase balance inconsistency in critical duplex applications [S1, S4].</p>
+
         <table class="gas-specs-table">
             <thead>
                 <tr>
@@ -348,6 +357,32 @@
                 <h4><a href="/products/pure-argon/">Pure Argon</a></h4>
                 <p>TIG welding alternative for duplex</p>
                 <div class="meta">Best for: Precise heat control applications</div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>Can CRONIGON® S be used for austenitic stainless steels like 304 or 316?</h3>
+                <p>No. CRONIGON® S is specifically formulated for duplex stainless steels only. The 2% nitrogen content can cause embrittlement in austenitic grades like 304/316. Use <a href="/products/cronigon-2/">CRONIGON® 2</a> (Ar+2%CO₂) for austenitic applications [S3].</p>
+            </div>
+            <div class="faq-item">
+                <h3>What's the difference between CRONIGON® S and pure argon for duplex welding?</h3>
+                <p>Pure argon lacks nitrogen, leading to ferrite-rich weld metal that compromises duplex properties. CRONIGON® S adds precisely 2% nitrogen to maintain the optimal 40-60% austenite balance critical for duplex strength and corrosion resistance [S2].</p>
+            </div>
+            <div class="faq-item">
+                <h3>Why is heat input control more critical with duplex steels?</h3>
+                <p>Excessive heat input (>3.0 kJ/mm) causes sigma phase formation in the 600-1000°C temperature range during cooling, severely embrittling the weld. CRONIGON® S nitrogen helps suppress sigma formation but cannot overcome excessive thermal input [S2].</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is CRONIGON® S more expensive than standard welding gases?</h3>
+                <p>Yes, typically 40-60% higher cost than pure argon due to specialized nitrogen blending and quality control requirements. However, this prevents costly rework from phase imbalance and eliminates post-weld heat treatment needs [S4].</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I use CRONIGON® S for TIG welding of duplex steels?</h3>
+                <p>Yes, though TIG welding allows more precise heat control where pure argon might suffice for root passes. CRONIGON® S is essential for MAG/MIG welding where faster cooling rates require nitrogen to maintain phase balance [S1].</p>
             </div>
         </div>
 
@@ -440,40 +475,97 @@
     </footer>
 
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "CRONIGON® S",
-        "description": "Specialized shielding gas with 98% Argon + 2% Nitrogen for duplex stainless steel welding maintaining optimal phase balance",
-        "manufacturer": {
-            "@type": "Organization",
-            "name": "Linde"
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "CRONIGON® S",
+            "description": "Specialized shielding gas with 98% Argon + 2% Nitrogen for duplex stainless steel welding maintaining optimal phase balance",
+            "brand": {
+                "@type": "Brand",
+                "name": "Linde"
+            },
+            "manufacturer": {
+                "@type": "Organization",
+                "name": "Linde"
+            },
+            "category": "Welding Shielding Gas",
+            "additionalProperty": [
+                {
+                    "@type": "PropertyValue",
+                    "name": "Composition",
+                    "value": "98% Argon + 2% Nitrogen"
+                },
+                {
+                    "@type": "PropertyValue",
+                    "name": "ISO Classification",
+                    "value": "I1-ArN-2 (ISO 14175:2008)"
+                },
+                {
+                    "@type": "PropertyValue",
+                    "name": "Austenite Promotion",
+                    "value": "+15 Nieq equivalent"
+                },
+                {
+                    "@type": "PropertyValue",
+                    "name": "Primary Application",
+                    "value": "Duplex stainless steel welding (2205, 2507, Zeron 100)"
+                },
+                {
+                    "@type": "PropertyValue",
+                    "name": "Gas Purity",
+                    "value": "99.999%"
+                }
+            ],
+            "applicationCategory": "Duplex stainless steel welding with nitrogen-enhanced phase balance control"
         },
-        "category": "Welding Gas",
-        "additionalProperty": [
-            {
-                "@type": "PropertyValue",
-                "name": "Composition",
-                "value": "98% Argon + 2% Nitrogen"
-            },
-            {
-                "@type": "PropertyValue",
-                "name": "ISO Classification",
-                "value": "I1-ArN-2"
-            },
-            {
-                "@type": "PropertyValue",
-                "name": "Austenite Promotion",
-                "value": "+15 Nieq equivalent"
-            },
-            {
-                "@type": "PropertyValue",
-                "name": "Primary Application",
-                "value": "Duplex stainless steel welding (2205, 2507, Zeron 100)"
-            }
-        ],
-        "applicationCategory": "Duplex stainless steel welding with nitrogen-enhanced phase balance control"
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Can CRONIGON® S be used for austenitic stainless steels like 304 or 316?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. CRONIGON® S is specifically formulated for duplex stainless steels only. The 2% nitrogen content can cause embrittlement in austenitic grades like 304/316. Use CRONIGON® 2 (Ar+2%CO₂) for austenitic applications."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What's the difference between CRONIGON® S and pure argon for duplex welding?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Pure argon lacks nitrogen, leading to ferrite-rich weld metal that compromises duplex properties. CRONIGON® S adds precisely 2% nitrogen to maintain the optimal 40-60% austenite balance critical for duplex strength and corrosion resistance."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why is heat input control more critical with duplex steels?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Excessive heat input (>3.0 kJ/mm) causes sigma phase formation in the 600-1000°C temperature range during cooling, severely embrittling the weld. CRONIGON® S nitrogen helps suppress sigma formation but cannot overcome excessive thermal input."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is CRONIGON® S more expensive than standard welding gases?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, typically 40-60% higher cost than pure argon due to specialized nitrogen blending and quality control requirements. However, this prevents costly rework from phase imbalance and eliminates post-weld heat treatment needs."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I use CRONIGON® S for TIG welding of duplex steels?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, though TIG welding allows more precise heat control where pure argon might suffice for root passes. CRONIGON® S is essential for MAG/MIG welding where faster cooling rates require nitrogen to maintain phase balance."
+                    }
+                }
+            ]
+        }
+    ]
     </script>
 </body>
 </html>

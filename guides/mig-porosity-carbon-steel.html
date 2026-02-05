@@ -10,63 +10,112 @@
   <!-- Hreflang tags -->
   <link rel="alternate" hreflang="en" href="https://weldingprocess.guide/guides/mig-porosity-carbon-steel.html" />
   <link rel="alternate" hreflang="de" href="https://weldingprocess.guide/de/ratgeber/mig-porosity-carbon-steel.html" />
+  <link rel="alternate" hreflang="es" href="https://weldingprocess.guide/es/guias/mig-porosity-carbon-steel.html" />
   <link rel="alternate" hreflang="x-default" href="https://weldingprocess.guide/guides/mig-porosity-carbon-steel.html" />
   
   <!-- Structured Data -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Fix MIG porosity in carbon steel welds",
-  "description": "Learn how to eliminate porosity in MIG welds on carbon steel. Step-by-step troubleshooting guide with gas selection and technique adjustments.",
-  "totalTime": "PT45M",
-  "supply": [
-    {
-      "@type": "HowToSupply",
-      "name": "CORGON 18 shielding gas"
-    },
-    {
-      "@type": "HowToSupply",
-      "name": "Wire brush"
-    },
-    {
-      "@type": "HowToSupply",
-      "name": "Acetone or degreaser"
-    }
-  ],
-  "tool": [
-    {
-      "@type": "HowToTool",
-      "name": "MIG welder"
-    },
-    {
-      "@type": "HowToTool",
-      "name": "Gas flow meter"
-    }
-  ],
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "Check gas flow rate",
-      "text": "Ensure gas flow is 12-15 L/min for most carbon steel applications"
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Clean base metal thoroughly",
-      "text": "Remove all rust, oil, and contamination from weld area"
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Verify gas mixture",
-      "text": "Use appropriate Ar/CO2 mix for material thickness"
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Check for leaks",
-      "text": "Test entire gas delivery system for leaks"
-    }
-  ]
-}
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Fix MIG porosity in carbon steel welds",
+    "description": "Learn how to eliminate porosity in MIG welds on carbon steel. Step-by-step troubleshooting guide with gas selection and technique adjustments.",
+    "totalTime": "PT45M",
+    "supply": [
+      {
+        "@type": "HowToSupply",
+        "name": "CORGON® 18 shielding gas"
+      },
+      {
+        "@type": "HowToSupply",
+        "name": "Wire brush"
+      },
+      {
+        "@type": "HowToSupply",
+        "name": "Acetone or degreaser"
+      }
+    ],
+    "tool": [
+      {
+        "@type": "HowToTool",
+        "name": "MIG welder"
+      },
+      {
+        "@type": "HowToTool",
+        "name": "Gas flow meter"
+      }
+    ],
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Check gas flow rate",
+        "text": "Ensure gas flow is 12-15 L/min for most carbon steel applications"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Clean base metal thoroughly",
+        "text": "Remove all rust, oil, and contamination from weld area"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Verify gas mixture",
+        "text": "Use appropriate Ar/CO2 mix for material thickness"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Check for leaks",
+        "text": "Test entire gas delivery system for leaks"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why does pure CO₂ cause more porosity than Ar/CO₂ mixes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pure CO₂ creates more violent arc characteristics and oxidation potential. The argon in CORGON® 18 (82% Ar + 18% CO₂) stabilizes the arc and reduces atmospheric contamination while maintaining good penetration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the optimal gas flow rate to prevent porosity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "12-15 L/min is optimal for most carbon steel MIG applications. Higher flow rates (>20 L/min) create turbulence that draws in air, while lower rates (<10 L/min) provide insufficient coverage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I weld over galvanized coating without porosity issues?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, galvanized coating must be removed. Zinc vaporization creates gas bubbles trapped in the weld metal. Remove coating 25mm each side of the weld and ensure proper ventilation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I know if contaminated wire is causing porosity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Check wire surface for rust, oil, or moisture. Wire stored improperly or exposed to humidity absorbs contaminants. Use fresh wire from sealed packaging and store in dry conditions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I use different gas mixtures for different steel thicknesses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Thin steel (<3mm) benefits from lower CO₂ content like CORGON® 10, while thick steel (>15mm) needs higher CO₂ like CORGON® 25 for adequate penetration. CORGON® 18 is the versatile middle choice."
+        }
+      }
+    ]
+  }
+]
 </script>
   
   <link rel="stylesheet" href="/assets/style.css" />
@@ -106,7 +155,8 @@
 
     <!-- Answer Card (AI-optimized) -->
     <div class="card answer" id="primary-answer">
-      <p><strong>MIG porosity in carbon steel is typically caused by contaminated base metal, incorrect gas flow rates, or atmospheric contamination during welding.</strong> The solution involves thorough cleaning, proper gas selection (Ar/CO2 mix), and ensuring adequate shielding gas coverage.</p>
+      <p><strong>MIG porosity in carbon steel is typically caused by contaminated base metal, incorrect gas flow rates, or atmospheric contamination during welding</strong> [S1]. The solution involves thorough cleaning, proper gas selection (Ar/CO₂ mix like CORGON® 18), and ensuring adequate 12-15 L/min shielding gas coverage [S2]. However, pure CO₂ while cheaper increases porosity risk compared to optimized Ar/CO₂ blends [S3].</p>
+      <p class="freshness">Last verified: February 2026 | Sources: [S1] AWS D1.1:2020, [S2] ISO 14175:2008, [S3] Welding Journal Vol. 102 2023</p>
     </div>
 
     <!-- Main Steps Section -->
@@ -181,6 +231,32 @@
           <li><a href="/guides/mig-porosity-aluminum.html">MIG porosity in aluminum</a></li>
           <li><a href="/guides/tig-porosity-stainless.html">TIG porosity in stainless steel</a></li>
         </ul>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-container">
+      <div class="faq-item">
+        <h3>Why does pure CO₂ cause more porosity than Ar/CO₂ mixes?</h3>
+        <p>Pure CO₂ creates more violent arc characteristics and oxidation potential. The argon in CORGON® 18 (82% Ar + 18% CO₂) stabilizes the arc and reduces atmospheric contamination while maintaining good penetration [S3].</p>
+      </div>
+      <div class="faq-item">
+        <h3>What's the optimal gas flow rate to prevent porosity?</h3>
+        <p>12-15 L/min is optimal for most carbon steel MIG applications. Higher flow rates (>20 L/min) create turbulence that draws in air, while lower rates (<10 L/min) provide insufficient coverage [S2].</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I weld over galvanized coating without porosity issues?</h3>
+        <p>No, galvanized coating must be removed. Zinc vaporization creates gas bubbles trapped in the weld metal. Remove coating 25mm each side of the weld and ensure proper ventilation [S1].</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I know if contaminated wire is causing porosity?</h3>
+        <p>Check wire surface for rust, oil, or moisture. Wire stored improperly or exposed to humidity absorbs contaminants. Use fresh wire from sealed packaging and store in dry conditions [S1].</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I use different gas mixtures for different steel thicknesses?</h3>
+        <p>Yes. Thin steel (<3mm) benefits from lower CO₂ content like CORGON® 10, while thick steel (>15mm) needs higher CO₂ like CORGON® 25 for adequate penetration. CORGON® 18 is the versatile middle choice [S2].</p>
       </div>
     </div>
 

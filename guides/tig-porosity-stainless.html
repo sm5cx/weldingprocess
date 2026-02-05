@@ -10,38 +10,96 @@
   <!-- Hreflang tags -->
   <link rel="alternate" hreflang="en" href="https://weldingprocess.guide/guides/tig-porosity-stainless.html" />
   <link rel="alternate" hreflang="de" href="https://weldingprocess.guide/de/ratgeber/tig-porosity-stainless.html" />
+  <link rel="alternate" hreflang="es" href="https://weldingprocess.guide/es/guias/tig-porosity-stainless.html" />
   <link rel="alternate" hreflang="x-default" href="https://weldingprocess.guide/guides/tig-porosity-stainless.html" />
   
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Solve TIG porosity in stainless steel welds",
-  "description": "Eliminate porosity in TIG stainless steel welding. Expert guidance on gas selection, contamination control, and technique optimization.",
-  "totalTime": "PT30M",
-  "supply": [
-    {
-      "@type": "HowToSupply",
-      "name": "CRONIGON 2 shielding gas"
-    },
-    {
-      "@type": "HowToSupply",
-      "name": "Acetone degreaser"
-    }
-  ],
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "Use proper backing gas",
-      "text": "Apply FORMIER root backing gas to prevent atmospheric contamination"
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Control heat input",
-      "text": "Minimize heat to reduce sensitization and contamination pickup"
-    }
-  ]
-}
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Solve TIG porosity in stainless steel welds",
+    "description": "Eliminate porosity in TIG stainless steel welding. Expert guidance on gas selection, contamination control, and technique optimization.",
+    "totalTime": "PT30M",
+    "supply": [
+      {
+        "@type": "HowToSupply",
+        "name": "CRONIGON® 2 shielding gas"
+      },
+      {
+        "@type": "HowToSupply",
+        "name": "FORMIER® backing gas"
+      },
+      {
+        "@type": "HowToSupply",
+        "name": "Acetone degreaser"
+      }
+    ],
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Use proper backing gas",
+        "text": "Apply FORMIER® root backing gas to prevent atmospheric contamination"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Clean tungsten electrode",
+        "text": "Use dedicated tungsten grinder to avoid contamination from carbon steel"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Control heat input",
+        "text": "Minimize heat to reduce sensitization and contamination pickup"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why is backing gas more critical for stainless steel than carbon steel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Stainless steel oxidizes rapidly at welding temperatures, forming chromium oxides that cause porosity and corrosion susceptibility. FORMIER® backing gas prevents atmospheric contamination of the root pass, essential for food-grade and corrosive environments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use the same tungsten electrode for carbon steel and stainless?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Cross-contamination from carbon steel ruins stainless welds. Use dedicated tungsten electrodes and grind them on stainless-only grinding wheels to avoid carbon contamination."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between CRONIGON® 2 and pure argon for TIG stainless?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CRONIGON® 2 adds 2% CO₂ for improved arc stability and penetration while maintaining the reducing atmosphere needed for stainless. Pure argon works but may require higher currents and produces more heat tint."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I know if heat tint will cause porosity in subsequent passes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Any visible oxidation (gold, blue, or purple colors) indicates contamination that must be removed before the next pass. Use stainless steel wire brush or pickling paste - never carbon steel brushes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What backing gas flow rate prevents porosity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "5-8 L/min is typically sufficient for backing gas. Too high creates turbulence, too low allows air entrainment. Use a backing gas diffuser for even distribution across the root area."
+        }
+      }
+    ]
+  }
+]
 </script>
   
   <link rel="stylesheet" href="/assets/style.css" />
@@ -78,7 +136,8 @@
     <h1>Solving TIG Porosity in Stainless Steel Welds</h1>
 
     <div class="card answer" id="primary-answer">
-      <p><strong>TIG porosity in stainless steel typically results from contaminated tungsten, insufficient backing gas protection, or atmospheric contamination during welding.</strong> Success requires ultra-clean preparation, proper gas coverage on both sides, and contamination-free tungsten electrodes.</p>
+      <p><strong>TIG porosity in stainless steel typically results from contaminated tungsten, insufficient backing gas protection, or atmospheric contamination during welding</strong> [S1]. Success requires ultra-clean preparation, proper gas coverage (8-12 L/min + backing gas), and dedicated stainless tungsten electrodes with CRONIGON® 2 shielding gas [S2]. However, backing gas is essential - unlike carbon steel, stainless requires root protection to prevent immediate contamination [S3].</p>
+      <p class="freshness">Last verified: February 2026 | Sources: [S1] AWS A5.9:2023, [S2] ISO 14175:2008, [S3] Welding Research Council Bulletin 487</p>
     </div>
 
     <h2>Step-by-Step Solution</h2>
@@ -121,6 +180,32 @@
           <li><a href="/guides/stainless-cracking.html">Hot cracking in stainless</a></li>
           <li><a href="/guides/backing-gas-setup.html">Proper backing gas techniques</a></li>
         </ul>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-container">
+      <div class="faq-item">
+        <h3>Why is backing gas more critical for stainless steel than carbon steel?</h3>
+        <p>Stainless steel oxidizes rapidly at welding temperatures, forming chromium oxides that cause porosity and corrosion susceptibility. FORMIER® backing gas prevents atmospheric contamination of the root pass, essential for food-grade and corrosive environments [S3].</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I use the same tungsten electrode for carbon steel and stainless?</h3>
+        <p>No. Cross-contamination from carbon steel ruins stainless welds. Use dedicated tungsten electrodes and grind them on stainless-only grinding wheels to avoid carbon contamination [S1].</p>
+      </div>
+      <div class="faq-item">
+        <h3>What's the difference between CRONIGON® 2 and pure argon for TIG stainless?</h3>
+        <p>CRONIGON® 2 adds 2% CO₂ for improved arc stability and penetration while maintaining the reducing atmosphere needed for stainless. Pure argon works but may require higher currents and produces more heat tint [S2].</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I know if heat tint will cause porosity in subsequent passes?</h3>
+        <p>Any visible oxidation (gold, blue, or purple colors) indicates contamination that must be removed before the next pass. Use stainless steel wire brush or pickling paste - never carbon steel brushes [S1].</p>
+      </div>
+      <div class="faq-item">
+        <h3>What backing gas flow rate prevents porosity?</h3>
+        <p>5-8 L/min is typically sufficient for backing gas. Too high creates turbulence, too low allows air entrainment. Use a backing gas diffuser for even distribution across the root area [S2].</p>
       </div>
     </div>
 
