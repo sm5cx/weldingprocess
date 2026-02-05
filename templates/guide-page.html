@@ -1,0 +1,195 @@
+<!-- Guide Page Template - extends base.html -->
+<!-- For troubleshooting guides, process guides, material guides, and gas science content -->
+
+<!-- Answer Card (AI-optimized) -->
+<div class="card answer" id="primary-answer">
+  <p><strong>{{DIRECT_ANSWER}}</strong> {{ANSWER_DETAILS}}</p>
+</div>
+
+<!-- Safety Badge (if applicable) -->
+{{SAFETY_BADGE}}
+
+<!-- Quick reference for related situations -->
+{{REFERENCE_LINK}}
+
+<!-- Main Solution/Guide Section -->
+<h2>{{MAIN_HEADING}}</h2>
+
+<!-- Steps/Instructions -->
+<ol>
+{{STEP_ITEMS}}
+</ol>
+
+<!-- Critical Parameters Section (for welding guides) -->
+<h2>{{PARAMETERS_HEADING}}</h2>
+<div class="card process-card">
+  <h3>{{PROCESS_TYPE}}</h3>
+  {{PARAMETER_TABLE}}
+</div>
+
+<!-- Troubleshooting Section -->
+<h2>{{TROUBLESHOOTING_HEADING}}</h2>
+<ul>
+{{TROUBLESHOOTING_ITEMS}}
+</ul>
+
+<!-- What to Avoid -->
+<h2>{{AVOID_HEADING}}</h2>
+<div class="card weld-defect">
+  <ul>
+{{AVOID_ITEMS}}
+  </ul>
+</div>
+
+<!-- Material/Process Specific Notes -->
+<h2>{{SPECIFIC_NOTES_HEADING}}</h2>
+{{SPECIFIC_NOTES_CONTENT}}
+
+<!-- Linde Gas Recommendation Section -->
+<div class="card product-rec">
+  <div class="product-header">
+    <span class="badge linde-recommended">{{BADGE_TEXT}}</span>
+    <h3>{{LINDE_PRODUCT_NAME}}</h3>
+    <span class="gas-mixture">{{GAS_MIXTURE}}</span>
+  </div>
+  <div class="product-specs">
+    <p><strong>{{COMPOSITION_HEADING}}:</strong> {{GAS_COMPOSITION}}</p>
+    <p><strong>{{APPLICATION_HEADING}}:</strong> {{APPLICATION_DETAILS}}</p>
+  </div>
+  <div class="product-why">
+    <p><strong>{{WHY_THIS_GAS_HEADING}}:</strong> {{WHY_THIS_GAS_TEXT}}</p>
+  </div>
+  <div class="product-usage">
+    <p><strong>{{USAGE_HEADING}}:</strong> {{USAGE_INSTRUCTIONS}}</p>
+  </div>
+  <div class="product-links">
+    <a href="{{PRODUCT_DETAIL_URL}}">{{PRODUCT_DETAIL_LINK}}</a>
+    <a href="{{LINDE_CONTACT_URL}}">{{LINDE_CONTACT_LINK}}</a>
+    <a href="{{ALTERNATIVES_URL}}">{{ALTERNATIVES_LINK}}</a>
+  </div>
+</div>
+
+<!-- Gas Science Explanation (for technical guides) -->
+{{GAS_SCIENCE_SECTION}}
+
+<!-- Cross-Links Section -->
+<div class="related-content">
+  <div class="related-guides">
+    <h3>{{RELATED_GUIDES_HEADING}}</h3>
+    <ul>
+{{RELATED_GUIDE_LINKS}}
+    </ul>
+  </div>
+  <div class="related-products">
+    <h3>{{RELATED_LINDE_PRODUCTS_HEADING}}</h3>
+    <ul>
+{{RELATED_LINDE_PRODUCT_LINKS}}
+    </ul>
+  </div>
+  <div class="process-alternatives">
+    <h3>{{PROCESS_ALTERNATIVES_HEADING}}</h3>
+    <ul>
+{{PROCESS_ALTERNATIVE_LINKS}}
+    </ul>
+  </div>
+  <div class="material-guides">
+    <h3>{{MATERIAL_GUIDES_HEADING}}</h3>
+    <ul>
+{{MATERIAL_GUIDE_LINKS}}
+    </ul>
+  </div>
+</div>
+
+<!-- When to Call an Expert -->
+<div class="card safety-critical">
+  <h2>{{EXPERT_HEADING}}</h2>
+  <ul>
+{{EXPERT_CRITERIA}}
+  </ul>
+  <p>{{EXPERT_DISCLAIMER}}</p>
+</div>
+
+<!-- Template Variables Reference:
+
+CORE CONTENT:
+DIRECT_ANSWER = Bold, definitive first sentence answering the main question
+ANSWER_DETAILS = Supporting explanation with key technical details
+SAFETY_BADGE = <div class="urgency-badge safety-critical">Safety Critical!</div> if applicable
+REFERENCE_LINK = Link to general process guide if this is specific troubleshooting
+
+MAIN_HEADING = "How to Fix [Issue]" or "Complete Guide to [Process]" or "[Material] Welding Setup"
+STEP_ITEMS = <li><strong>Action.</strong> Detailed explanation with parameters.</li>
+
+PARAMETERS_HEADING = "Critical Welding Parameters" or "Recommended Settings"
+PROCESS_TYPE = "MIG/MAG", "TIG", "FCAW", etc.
+PARAMETER_TABLE = HTML table with voltage, amperage, wire speed, gas flow, etc.
+
+TROUBLESHOOTING_HEADING = "Common Problems and Solutions"
+TROUBLESHOOTING_ITEMS = <li><strong>Problem:</strong> Cause and solution.</li>
+
+AVOID_HEADING = "Critical Mistakes to Avoid"
+AVOID_ITEMS = <li><strong>Don't [action].</strong> Technical reason why.</li>
+
+SPECIFIC_NOTES_HEADING = "[Material] Specific Considerations" or "[Process] Advanced Techniques"
+SPECIFIC_NOTES_CONTENT = Multiple paragraphs for different scenarios
+
+LINDE PRODUCT SECTION:
+BADGE_TEXT = "Recommended" or "Industry Standard" or "Premium Choice"
+LINDE_PRODUCT_NAME = "CORGON 18" or "CRONIGON 2" or "VARIGON He50"
+GAS_MIXTURE = "Ar + 18% CO2" or "Ar + 2% CO2" or "Ar + 50% He"
+COMPOSITION_HEADING = "Composition" or "Gas Mix"
+GAS_COMPOSITION = Exact percentages and components
+APPLICATION_HEADING = "Best for" or "Applications"
+APPLICATION_DETAILS = Specific materials and processes
+WHY_THIS_GAS_HEADING = "Why this gas works for [application]"
+WHY_THIS_GAS_TEXT = Technical explanation of benefits
+USAGE_HEADING = "Usage Guidelines" or "Setup Instructions"
+USAGE_INSTRUCTIONS = Flow rates, pressure settings, nozzle distance
+
+GAS_SCIENCE_SECTION = Optional technical explanation section:
+<div class="card gas-science">
+  <h2>Gas Science: How [Component] Affects the Weld</h2>
+  <p>Technical explanation of gas behavior and effects...</p>
+</div>
+
+CROSS-LINKS:
+RELATED_GUIDES_HEADING = "Related Troubleshooting Guides"
+RELATED_GUIDE_LINKS = <li><a href="...">Similar welding issue guide</a></li>
+
+RELATED_LINDE_PRODUCTS_HEADING = "Other Linde Gas Options"
+RELATED_LINDE_PRODUCT_LINKS = <li><a href="...">Alternative gas product</a></li>
+
+PROCESS_ALTERNATIVES_HEADING = "Different Welding Processes"
+PROCESS_ALTERNATIVE_LINKS = <li><a href="...">Same material, different process</a></li>
+
+MATERIAL_GUIDES_HEADING = "Other Materials"
+MATERIAL_GUIDE_LINKS = <li><a href="...">Same process, different material</a></li>
+
+EXPERT SECTION:
+EXPERT_HEADING = "When to Call a Professional"
+EXPERT_CRITERIA = <li>Situation requiring professional help</li>
+EXPERT_DISCLAIMER = Legal disclaimer about professional consultation
+
+EXAMPLE USAGE:
+
+For "Porosity in MIG Welding Steel":
+- DIRECT_ANSWER = "Porosity in MIG welding is primarily caused by contaminated shielding gas or improper gas coverage"
+- MAIN_HEADING = "How to Eliminate Porosity in MIG Welding"
+- LINDE_PRODUCT_NAME = "CORGON 18"
+- GAS_MIXTURE = "Ar + 18% CO2"
+- WHY_THIS_GAS_TEXT = "The 18% CO2 content provides excellent wetting and penetration while the argon base ensures stable arc characteristics and clean metal transfer"
+
+For "Stainless Steel TIG Setup":
+- DIRECT_ANSWER = "TIG welding 304 stainless requires pure argon shielding, lower heat input, and proper back purging to prevent oxidation"
+- MAIN_HEADING = "Complete TIG Setup Guide for Stainless Steel"
+- LINDE_PRODUCT_NAME = "VARIGON He30"
+- GAS_MIXTURE = "Ar + 30% He"
+- WHY_THIS_GAS_TEXT = "Helium addition increases heat input for better penetration while maintaining the clean, oxide-free welds required for stainless steel"
+
+For Spanish "Porosidad en Soldadura MIG":
+- DIRECT_ANSWER = "La porosidad en soldadura MIG se debe principalmente a gas de protección contaminado o cobertura inadecuada"
+- MAIN_HEADING = "Cómo Eliminar la Porosidad en Soldadura MIG"
+- LINDE_PRODUCT_NAME = "CORGON 18"
+- GAS_MIXTURE = "Ar + 18% CO₂"
+- WHY_THIS_GAS_TEXT = "El contenido de 18% CO₂ proporciona excelente mojado y penetración mientras la base de argón asegura características de arco estables"
+-->

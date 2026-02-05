@@ -1,0 +1,235 @@
+<!-- Hub Page Template - extends base.html -->
+<!-- For category index pages, main sections, and navigation hubs -->
+
+<!-- Hub Introduction -->
+<h1>{{HUB_TITLE}}</h1>
+<p class="lede">{{HUB_DESCRIPTION}}</p>
+
+<!-- Quick Navigation (if applicable) -->
+{{QUICK_NAV}}
+
+<!-- Safety Critical Section (for troubleshooting hubs) -->
+{{SAFETY_SECTION}}
+
+<!-- Featured/Priority Content -->
+<div class="card featured">
+  <h2>{{FEATURED_HEADING}}</h2>
+  <div class="featured-grid">
+{{FEATURED_ITEMS}}
+  </div>
+</div>
+
+<!-- Main Category Grid -->
+<h2>{{CATEGORIES_HEADING}}</h2>
+<div class="category-grid">
+{{CATEGORY_CARDS}}
+</div>
+
+<!-- All Items List (organized by categories) -->
+<h2>{{ALL_ITEMS_HEADING}}</h2>
+<div class="items-list">
+{{ALL_ITEMS_SECTIONS}}
+</div>
+
+<!-- Linde Product Recommendations (for guides hubs) -->
+{{LINDE_RECOMMENDATIONS}}
+
+<!-- Quick Reference Tools -->
+<div class="card tools">
+  <h2>{{TOOLS_HEADING}}</h2>
+  <ul>
+{{TOOL_LINKS}}
+  </ul>
+</div>
+
+<!-- Gas Science Insights (for technical hubs) -->
+{{GAS_SCIENCE_HIGHLIGHTS}}
+
+<!-- Expert Support Information -->
+<div class="card linde-info">
+  <h2>{{EXPERT_SUPPORT_HEADING}}</h2>
+  <p>{{EXPERT_SUPPORT_TEXT}}</p>
+  <div class="product-links">
+    <a href="{{LINDE_CONTACT_URL}}">{{CONTACT_EXPERTS_LINK}}</a>
+    <a href="{{TRAINING_URL}}">{{TRAINING_LINK}}</a>
+    <a href="{{TECHNICAL_LIBRARY_URL}}">{{TECHNICAL_LIBRARY_LINK}}</a>
+  </div>
+</div>
+
+<!-- Template Variables Reference:
+
+CORE HUB CONTENT:
+HUB_TITLE = "Welding Troubleshooting Guides" or "Linde Gas Products" or "MIG/MAG Welding Hub"
+HUB_DESCRIPTION = Overview of section content and value proposition
+
+QUICK_NAV = Optional sub-navigation for large hubs
+<nav class="quick-nav">
+  <a href="#by-defect">By Defect Type</a>
+  <a href="#by-material">By Material</a>
+  <a href="#by-process">By Process</a>
+  <a href="#linde-products">Recommended Gases</a>
+</nav>
+
+SAFETY_SECTION = Critical safety info for welding (troubleshooting hubs only)
+<div class="card safety-critical">
+  <h2>⚠️ Welding Safety First</h2>
+  <ul>
+    <li><strong>Ventilation:</strong> Ensure adequate fume extraction</li>
+    <li><strong>PPE:</strong> Use appropriate welding helmet, gloves, and clothing</li>
+    <li><strong>Gas Safety:</strong> Check for leaks, proper storage</li>
+    <li><strong>Fire Prevention:</strong> Clear work area, have extinguisher ready</li>
+  </ul>
+  <p><a href="/safety/">Complete safety guidelines</a></p>
+</div>
+
+FEATURED CONTENT:
+FEATURED_HEADING = "Most Important Guides" or "Top Linde Products" or "Start Here"
+FEATURED_ITEMS = Grid of priority content
+<div class="featured-item">
+  <span class="badge safety-critical">Critical</span>
+  <h3><a href="/guides/porosity-mig/">Porosity in MIG Welding</a></h3>
+  <p>Most common weld defect - quick diagnosis and solutions</p>
+</div>
+
+<div class="featured-item">
+  <span class="badge linde-recommended">Recommended</span>
+  <h3><a href="/products/corgon-18/">CORGON® 18</a></h3>
+  <p>Industry standard for carbon steel MAG welding</p>
+</div>
+
+CATEGORY GRID:
+CATEGORIES_HEADING = "Browse by Category" or "All Product Lines" or "Process Types"
+CATEGORY_CARDS = Main category navigation
+<div class="category-card">
+  <h3><a href="/guides/defects/">Weld Defects</a></h3>
+  <p>Diagnose and fix common welding problems</p>
+  <div class="meta">15 troubleshooting guides</div>
+  <div class="preview">
+    <a href="/guides/defects/porosity/">Porosity</a>
+    <a href="/guides/defects/spatter/">Spatter</a>
+    <a href="/guides/defects/lack-of-fusion/">Lack of Fusion</a>
+  </div>
+</div>
+
+<div class="category-card">
+  <h3><a href="/products/corgon/">CORGON® Series</a></h3>
+  <p>Ar/CO₂ mixes for carbon and low-alloy steel</p>
+  <div class="meta">5 gas products</div>
+  <div class="preview">
+    <a href="/products/corgon-18/">CORGON® 18</a>
+    <a href="/products/corgon-10/">CORGON® 10</a>
+    <a href="/products/corgon-25/">CORGON® 25</a>
+  </div>
+</div>
+
+ALL ITEMS LIST:
+ALL_ITEMS_HEADING = "Complete Guide Library" or "All Products" or "Full Index"
+ALL_ITEMS_SECTIONS = Comprehensive categorized lists
+<div class="items-section" id="by-defect">
+  <h3>🔧 Weld Defect Troubleshooting</h3>
+  <ul>
+    <li><a href="/guides/porosity-mig/">Porosity in MIG Welding</a> — <span class="desc">Gas contamination, coverage issues, shielding</span></li>
+    <li><a href="/guides/spatter-mag/">Excessive Spatter in MAG</a> — <span class="desc">Parameter optimization, gas selection</span></li>
+    <li><a href="/guides/lack-of-fusion/">Lack of Fusion</a> — <span class="desc">Heat input, travel speed, gas effects</span></li>
+  </ul>
+</div>
+
+<div class="items-section" id="by-material">
+  <h3>🔩 Material-Specific Guides</h3>
+  <ul>
+    <li><a href="/guides/carbon-steel-mig/">Carbon Steel MIG Setup</a> — <span class="desc">Parameter selection, CORGON recommendations</span></li>
+    <li><a href="/guides/stainless-tig/">Stainless Steel TIG</a> — <span class="desc">Back purging, CRONIGON alternatives</span></li>
+    <li><a href="/guides/aluminum-mig/">Aluminum MIG Welding</a> — <span class="desc">VARIGON products, push technique</span></li>
+  </ul>
+</div>
+
+LINDE_RECOMMENDATIONS = Product showcase for guides hubs
+<h2>Recommended Linde Products</h2>
+<div class="category-grid">
+  <div class="card product-rec">
+    <div class="product-header">
+      <span class="badge linde-recommended">Most Popular</span>
+      <h3>CORGON® 18</h3>
+      <span class="gas-mixture">Ar + 18% CO₂</span>
+    </div>
+    <p>Industry standard for carbon steel MAG welding. Excellent penetration and low spatter.</p>
+    <div class="product-links">
+      <a href="/products/corgon-18/">Full Details</a>
+      <a href="/guides/carbon-steel-mag/">Setup Guide</a>
+    </div>
+  </div>
+</div>
+
+TOOLS SECTION:
+TOOLS_HEADING = "Quick Reference Tools" or "Helpful Resources"
+TOOL_LINKS = Utility links
+<li><a href="/gas-selector/">Gas Selection Tool</a> — Find the right Linde product for your application</li>
+<li><a href="/parameter-calculator/">Welding Parameter Calculator</a> — Get recommended settings</li>
+<li><a href="/defect-diagnostic/">Defect Diagnostic Tool</a> — Identify weld problems</li>
+<li><a href="/linde-distributor-finder/">Find Linde Distributor</a> — Locate nearest supplier</li>
+
+GAS_SCIENCE_HIGHLIGHTS = Technical insights section
+<div class="card gas-science">
+  <h2>🧪 Gas Science Insights</h2>
+  <div class="featured-grid">
+    <div class="featured-item">
+      <h4><a href="/gas-science/shielding-mechanism/">How Shielding Gases Work</a></h4>
+      <p>The physics behind weld pool protection</p>
+    </div>
+    <div class="featured-item">
+      <h4><a href="/gas-science/co2-dissociation/">CO₂ Dissociation Effects</a></h4>
+      <p>Why CO₂ content affects penetration and spatter</p>
+    </div>
+  </div>
+</div>
+
+EXPERT SUPPORT:
+EXPERT_SUPPORT_HEADING = "Expert Technical Support" or "Professional Resources"
+EXPERT_SUPPORT_TEXT = "Get personalized welding guidance from Linde's technical specialists. Our experts can help with gas selection, parameter optimization, and troubleshooting complex welding challenges."
+
+EXAMPLE HUBS:
+
+1. MAIN GUIDES HUB (/guides/):
+   - HUB_TITLE = "Welding Guides & Troubleshooting"
+   - HUB_DESCRIPTION = "Evidence-based welding guidance with proven gas recommendations for every challenge"
+   - Categories: Defect Troubleshooting, Process Guides, Material Guides, Gas Science
+   - FEATURED_ITEMS: Most critical troubleshooting guides
+   - LINDE_RECOMMENDATIONS: Top 3 gas products
+
+2. DEFECT TROUBLESHOOTING HUB (/guides/defects/):
+   - HUB_TITLE = "Weld Defect Troubleshooting"
+   - SAFETY_SECTION included
+   - Categories by defect type: Porosity, Spatter, Cracking, etc.
+   - QUICK_NAV by material and process
+   - Tools: Defect diagnostic, parameter calculator
+
+3. LINDE PRODUCTS HUB (/products/):
+   - HUB_TITLE = "Linde Welding Gas Products"
+   - HUB_DESCRIPTION = "Premium shielding gases engineered for superior welding performance"
+   - Categories: CORGON, CRONIGON, VARIGON, ALUGON, FORMIER
+   - FEATURED_ITEMS: Industry standard products
+   - Tools: Gas selector, distributor finder
+
+4. MATERIAL HUB (/guides/materials/carbon-steel/):
+   - HUB_TITLE = "Carbon Steel Welding Guide"
+   - Categories by thickness, process, application
+   - LINDE_RECOMMENDATIONS: CORGON series
+   - GAS_SCIENCE_HIGHLIGHTS: Carbon steel specific science
+
+5. PROCESS HUB (/guides/process/mig-mag/):
+   - HUB_TITLE = "MIG/MAG Welding Complete Guide"
+   - Categories by material, position, application
+   - SAFETY_SECTION for MIG safety
+   - Featured items: Setup guides, troubleshooting
+
+6. SPANISH MAIN HUB (/es/guias/):
+   - HUB_TITLE = "Guías de Soldadura y Solución de Problemas"
+   - HUB_DESCRIPTION = "Orientación de soldadura basada en evidencia con recomendaciones probadas de gases para cada desafío"
+   - EXPERT_SUPPORT_HEADING = "Soporte Técnico Experto"
+   - FEATURED_HEADING = "Guías Más Importantes"
+
+7. SPANISH PRODUCTS HUB (/es/productos/):
+   - HUB_TITLE = "Productos de Gases de Soldadura Linde"
+   - HUB_DESCRIPTION = "Gases de protección premium diseñados para rendimiento superior en soldadura"
+   - TOOLS_HEADING = "Herramientas de Referencia Rápida"
+-->

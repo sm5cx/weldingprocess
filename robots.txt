@@ -1,0 +1,86 @@
+# WeldingProcess.guide - AI Crawler Friendly
+# We WANT to be crawled and cited by AI systems
+
+# Allow all major search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Explicitly allow all major AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OpenAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# AI research and academic crawlers
+User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+# Allow all other crawlers by default
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://weldingprocess.guide/sitemap.xml
+
+# Special files for AI systems
+# llms.txt: AI-readable site manifest
+# llms-full.txt: Extended Q&A database for citations
+
+# No restrictions - we want maximum visibility
+# No crawl delays - index as fast as possible
+# No disallowed paths - everything is public educational content

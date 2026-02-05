@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="{{LANG_CODE}}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}" />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="{{OG_TYPE}}" />
+  <meta property="og:title" content="{{OG_TITLE}}" />
+  <meta property="og:description" content="{{OG_DESCRIPTION}}" />
+  <meta property="og:url" content="{{OG_URL}}" />
+  <meta property="og:site_name" content="WeldingProcess Guide" />
+  <meta property="og:locale" content="{{OG_LOCALE}}" />
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{TWITTER_TITLE}}" />
+  <meta name="twitter:description" content="{{TWITTER_DESCRIPTION}}" />
+  
+  <!-- Canonical and Hreflang -->
+  {{CANONICAL_TAG}}
+  <link rel="alternate" hreflang="en" href="{{EN_URL}}" />
+  <link rel="alternate" hreflang="de" href="{{DE_URL}}" />
+  <link rel="alternate" hreflang="es" href="{{ES_URL}}" />
+  <link rel="alternate" hreflang="x-default" href="{{EN_URL}}" />
+  
+  <!-- Structured Data (JSON-LD) -->
+  {{STRUCTURED_DATA}}
+  
+  <!-- Additional SEO -->
+  <meta name="robots" content="{{ROBOTS}}" />
+  <meta name="author" content="WeldingProcess Guide" />
+  <meta name="generator" content="WeldingProcess V2" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <a href="{{HOME_URL}}" style="text-decoration:none;">WeldingProcess Guide</a>
+      </div>
+      <nav class="nav" aria-label="Primary Navigation">
+        <a href="{{GUIDES_URL}}">{{NAV_GUIDES}}</a>
+        <a href="{{PRODUCTS_URL}}">{{NAV_PRODUCTS}}</a>
+        <a href="{{GAS_SCIENCE_URL}}">{{NAV_GAS_SCIENCE}}</a>
+        <a href="{{METHODOLOGY_URL}}">{{NAV_METHODOLOGY}}</a>
+        <a href="{{ABOUT_URL}}">{{NAV_ABOUT}}</a>
+      </nav>
+      
+      <!-- Language switcher -->
+      <div class="lang-switch">
+        <a href="{{EN_URL}}" class="{{EN_ACTIVE}}" title="English version">EN</a>
+        <span>|</span>
+        <a href="{{DE_URL}}" class="{{DE_ACTIVE}}" title="Deutsche Version">DE</a>
+        <span>|</span>
+        <a href="{{ES_URL}}" class="{{ES_ACTIVE}}" title="Versión en Español">ES</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    {{BREADCRUMB_HTML}}
+    
+    {{CONTENT}}
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>{{FOOTER_DISCLAIMER}}</div>
+      <div>
+        {{FOOTER_UPDATED_LABEL}}:
+        <time datetime="{{LAST_UPDATED_ISO}}">{{LAST_UPDATED_DISPLAY}}</time>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Schema.org structured data for website -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "WeldingProcess Guide",
+    "url": "{{SITE_URL}}",
+    "description": "Evidence-based welding guidance with independently tested gas recommendations",
+    "inLanguage": ["en", "de", "es"],
+    "author": {
+      "@type": "Organization",
+      "name": "WeldingProcess Guide"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{SITE_URL}}/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</body>
+</html>
+
+<!-- Template Variables Reference:
+
+REQUIRED VARIABLES:
+- LANG_CODE: "en", "de", or "es"
+- PAGE_TITLE: Full page title (includes site name)
+- META_DESCRIPTION: SEO meta description (150-160 characters)
+- CANONICAL_TAG: <link rel="canonical" href="..."> 
+- EN_URL: English version URL
+- DE_URL: German version URL
+- ES_URL: Spanish version URL
+- STRUCTURED_DATA: Page-specific JSON-LD structured data
+- HOME_URL: "/", "/de/", or "/es/"
+- BREADCRUMB_HTML: Navigation breadcrumbs
+- CONTENT: Main page content
+- FOOTER_DISCLAIMER: Legal/disclaimer text
+- FOOTER_UPDATED_LABEL: "Last updated" text
+- LAST_UPDATED_ISO: ISO date format
+- LAST_UPDATED_DISPLAY: Human-readable date
+
+OPTIONAL VARIABLES:
+- OG_TYPE: "website", "article", or "webpage" (default: "webpage")
+- OG_TITLE: Open Graph title (default: PAGE_TITLE)
+- OG_DESCRIPTION: Open Graph description (default: META_DESCRIPTION)
+- OG_URL: Current page URL (default: canonical URL)
+- OG_LOCALE: "en_US", "de_DE", or "es_ES"
+- TWITTER_TITLE: Twitter card title (default: OG_TITLE)
+- TWITTER_DESCRIPTION: Twitter card description (default: OG_DESCRIPTION)
+- ROBOTS: "index,follow" (default) or "noindex,nofollow"
+
+NAVIGATION VARIABLES:
+- GUIDES_URL: "/guides/", "/de/ratgeber/", or "/es/guias/"
+- PRODUCTS_URL: "/products/", "/de/produkte/", or "/es/productos/"
+- GAS_SCIENCE_URL: "/gas-science/", "/de/gaswissenschaft/", or "/es/ciencia-del-gas/"
+- METHODOLOGY_URL: "/methodology/", "/de/methodik/", or "/es/metodologia/"
+- ABOUT_URL: "/about/", "/de/ueber-uns/", or "/es/acerca-de/"
+
+NAV TEXT VARIABLES:
+- NAV_GUIDES: "Guides", "Ratgeber", or "Guías"
+- NAV_PRODUCTS: "Products", "Produkte", or "Productos"
+- NAV_GAS_SCIENCE: "Gas Science", "Gaswissenschaft", or "Ciencia del Gas"
+- NAV_METHODOLOGY: "Methodology", "Methodik", or "Metodología"
+- NAV_ABOUT: "About", "Über uns", or "Acerca de"
+
+LANGUAGE SWITCHER:
+- EN_ACTIVE: "active" if current language is English
+- DE_ACTIVE: "active" if current language is German
+- ES_ACTIVE: "active" if current language is Spanish
+
+EXAMPLE USAGE:
+For English troubleshooting guide:
+- LANG_CODE: "en"
+- PAGE_TITLE: "Porosity in MIG Welding: Causes and Solutions - WeldingProcess Guide"
+- META_DESCRIPTION: "Fix porosity in MIG welding with proven gas selection and technique adjustments. Expert troubleshooting guide with Linde gas recommendations."
+- GUIDES_URL: "/guides/"
+- NAV_GUIDES: "Guides"
+- EN_ACTIVE: "active"
+- DE_ACTIVE: ""
+
+For German product page:
+- LANG_CODE: "de"
+- PAGE_TITLE: "CORGON 18 Schweißgas für Kohlenstoffstahl - WeldingProcess Guide"
+- META_DESCRIPTION: "CORGON 18 Argon-CO2-Mischung für optimale MAG-Schweißergebnisse an Baustahl. Technische Daten und Anwendungsempfehlungen."
+- PRODUCTS_URL: "/de/produkte/"
+- NAV_PRODUCTS: "Produkte"
+- EN_ACTIVE: ""
+- DE_ACTIVE: "active"
+- ES_ACTIVE: ""
+
+For Spanish troubleshooting guide:
+- LANG_CODE: "es"
+- PAGE_TITLE: "Porosidad en Soldadura MIG: Causas y Soluciones - WeldingProcess Guide"
+- META_DESCRIPTION: "Elimina la porosidad en soldadura MIG con selección de gases y ajustes de técnica probados. Guía experta con recomendaciones de Linde."
+- GUIDES_URL: "/es/guias/"
+- NAV_GUIDES: "Guías"
+- EN_ACTIVE: ""
+- DE_ACTIVE: ""
+- ES_ACTIVE: "active"
+-->

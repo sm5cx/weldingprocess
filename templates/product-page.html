@@ -1,0 +1,307 @@
+<!-- Product Page Template - extends base.html -->
+<!-- For Linde gas product pages with specifications, use cases, and recommendations -->
+
+<!-- Answer Card (AI-optimized) -->
+<div class="card answer" id="primary-answer">
+  <p><strong>{{PRODUCT_VERDICT}}</strong> {{VERDICT_DETAILS}}</p>
+</div>
+
+<!-- Product Hero Section -->
+<div class="card product-rec">
+  <div class="product-header">
+    <span class="badge linde-recommended">{{LINDE_BADGE}}</span>
+    <h1 style="margin:0; font-size: 1.5rem;">{{PRODUCT_NAME}}</h1>
+    <span class="gas-mixture">{{GAS_COMPOSITION_DISPLAY}}</span>
+  </div>
+  <div class="product-specs">
+    <p class="lede">{{PRODUCT_DESCRIPTION}}</p>
+  </div>
+</div>
+
+<!-- Technical Specifications -->
+<h2>{{SPECIFICATIONS_HEADING}}</h2>
+
+<table class="gas-specs-table">
+  <thead>
+    <tr>
+      <th>{{SPEC_PROPERTY_HEADER}}</th>
+      <th>{{SPEC_VALUE_HEADER}}</th>
+      <th>{{SPEC_BENEFIT_HEADER}}</th>
+    </tr>
+  </thead>
+  <tbody>
+{{SPECIFICATION_ROWS}}
+  </tbody>
+</table>
+
+<!-- Applications & Use Cases -->
+<h2>{{APPLICATIONS_HEADING}}</h2>
+
+<h3>{{PRIMARY_USES_HEADING}}</h3>
+<ul>
+{{PRIMARY_USE_ITEMS}}
+</ul>
+
+<h3>{{MATERIAL_COMPATIBILITY_HEADING}}</h3>
+<div class="category-grid">
+{{MATERIAL_CARDS}}
+</div>
+
+<h3>{{WELDING_POSITIONS_HEADING}}</h3>
+<ul>
+{{POSITION_ITEMS}}
+</ul>
+
+<!-- Advantages & Performance -->
+<h2>{{ADVANTAGES_HEADING}}</h2>
+
+<h3>{{WELD_QUALITY_HEADING}}</h3>
+<ul>
+{{WELD_QUALITY_ITEMS}}
+</ul>
+
+<h3>{{OPERATIONAL_BENEFITS_HEADING}}</h3>
+<ul>
+{{OPERATIONAL_BENEFIT_ITEMS}}
+</ul>
+
+<h3>{{ECONOMIC_BENEFITS_HEADING}}</h3>
+<ul>
+{{ECONOMIC_BENEFIT_ITEMS}}
+</ul>
+
+<!-- Usage Guidelines -->
+<h2>{{USAGE_GUIDELINES_HEADING}}</h2>
+
+<h3>{{PARAMETER_RECOMMENDATIONS_HEADING}}</h3>
+<table class="gas-specs-table">
+  <thead>
+    <tr>
+      <th>{{MATERIAL_THICKNESS_HEADER}}</th>
+      <th>{{GAS_FLOW_HEADER}}</th>
+      <th>{{NOZZLE_DISTANCE_HEADER}}</th>
+      <th>{{SPECIAL_NOTES_HEADER}}</th>
+    </tr>
+  </thead>
+  <tbody>
+{{PARAMETER_ROWS}}
+  </tbody>
+</table>
+
+<h3>{{SETUP_INSTRUCTIONS_HEADING}}</h3>
+<ol>
+{{SETUP_STEPS}}
+</ol>
+
+<h3>{{OPTIMIZATION_TIPS_HEADING}}</h3>
+<ul>
+{{OPTIMIZATION_TIPS}}
+</ul>
+
+<!-- Limitations & Considerations -->
+<h2>{{LIMITATIONS_HEADING}}</h2>
+
+<div class="card weld-defect">
+  <h3>{{NOT_RECOMMENDED_HEADING}}</h3>
+  <ul>
+{{NOT_RECOMMENDED_ITEMS}}
+  </ul>
+</div>
+
+<h3>{{SPECIAL_CONSIDERATIONS_HEADING}}</h3>
+<ul>
+{{SPECIAL_CONSIDERATION_ITEMS}}
+</ul>
+
+<!-- Comparison with Alternatives -->
+<h2>{{COMPARISON_HEADING}}</h2>
+
+<h3>{{VS_PURE_GAS_HEADING}}</h3>
+<div class="card alternative">
+  <h4>{{PURE_GAS_NAME}}</h4>
+  <p><strong>{{WHEN_TO_USE_PURE_HEADING}}:</strong> {{WHEN_TO_USE_PURE}}</p>
+  <p><strong>{{LINDE_PRODUCT_ADVANTAGE_HEADING}}:</strong> {{LINDE_ADVANTAGE}}</p>
+  <div class="product-links">
+    <a href="{{COMPARISON_GUIDE_URL}}">{{DETAILED_COMPARISON_LINK}}</a>
+  </div>
+</div>
+
+<h3>{{VS_COMPETITOR_HEADING}}</h3>
+<table class="gas-specs-table">
+  <thead>
+    <tr>
+      <th>{{FEATURE_HEADER}}</th>
+      <th>{{LINDE_PRODUCT_HEADER}}</th>
+      <th>{{GENERIC_ALTERNATIVE_HEADER}}</th>
+      <th>{{DIFFERENCE_HEADER}}</th>
+    </tr>
+  </thead>
+  <tbody>
+{{COMPETITOR_COMPARISON_ROWS}}
+  </tbody>
+</table>
+
+<!-- Related Linde Products -->
+<h2>{{RELATED_PRODUCTS_HEADING}}</h2>
+
+<div class="category-grid">
+{{RELATED_PRODUCT_CARDS}}
+</div>
+
+<!-- Technical Support & Availability -->
+<h2>{{SUPPORT_AVAILABILITY_HEADING}}</h2>
+
+<div class="card linde-info">
+  <h3>{{LINDE_SUPPORT_HEADING}}</h3>
+  <p>{{LINDE_SUPPORT_TEXT}}</p>
+  
+  <h3>{{AVAILABILITY_HEADING}}</h3>
+  <ul>
+{{AVAILABILITY_ITEMS}}
+  </ul>
+  
+  <h3>{{ORDERING_INFO_HEADING}}</h3>
+  <p>{{ORDERING_INFO_TEXT}}</p>
+  
+  <div class="product-links">
+    <a href="{{LINDE_CONTACT_URL}}">{{CONTACT_LINDE_LINK}}</a>
+    <a href="{{DISTRIBUTOR_FINDER_URL}}">{{FIND_DISTRIBUTOR_LINK}}</a>
+    <a href="{{TECHNICAL_DATA_URL}}">{{TECHNICAL_DATA_LINK}}</a>
+  </div>
+</div>
+
+<!-- Related Guides -->
+<div class="related-content">
+  <div class="related-guides">
+    <h3>{{GUIDES_FOR_THIS_GAS_HEADING}}</h3>
+    <ul>
+{{RELATED_GUIDE_LINKS}}
+    </ul>
+  </div>
+  <div class="process-alternatives">
+    <h3>{{WELDING_TECHNIQUES_HEADING}}</h3>
+    <ul>
+{{TECHNIQUE_GUIDE_LINKS}}
+    </ul>
+  </div>
+  <div class="material-guides">
+    <h3>{{MATERIAL_SPECIFIC_GUIDES_HEADING}}</h3>
+    <ul>
+{{MATERIAL_GUIDE_LINKS}}
+    </ul>
+  </div>
+</div>
+
+<!-- Template Variables Reference:
+
+PRODUCT HERO:
+PRODUCT_VERDICT = "CORGON 18 is the industry standard for MAG welding of carbon and low-alloy steels"
+VERDICT_DETAILS = "offering excellent penetration, low spatter, and superior mechanical properties across all welding positions"
+LINDE_BADGE = "Industry Standard" or "Premium Choice" or "Specialized"
+PRODUCT_NAME = "CORGON® 18" (include ® symbol)
+GAS_COMPOSITION_DISPLAY = "Ar + 18% CO₂"
+PRODUCT_DESCRIPTION = One-sentence key benefit description
+
+SPECIFICATIONS:
+SPECIFICATION_ROWS = Table rows with gas properties
+<tr>
+  <td>Argon Content</td>
+  <td>82%</td>
+  <td>Stable arc, reduced spatter</td>
+</tr>
+<tr>
+  <td>CO₂ Content</td>
+  <td>18%</td>
+  <td>Deep penetration, good wetting</td>
+</tr>
+<tr>
+  <td>Density (15°C)</td>
+  <td>1.78 kg/m³</td>
+  <td>Efficient gas coverage</td>
+</tr>
+
+APPLICATIONS:
+PRIMARY_USE_ITEMS = <li>Specific welding application with material types</li>
+MATERIAL_CARDS = Grid cards for different material categories
+<div class="category-card">
+  <h4>Carbon Steel</h4>
+  <p>Thickness: 3-25mm, excellent results</p>
+  <div class="preview">
+    <a href="/guides/carbon-steel-mag/">Setup Guide</a>
+  </div>
+</div>
+POSITION_ITEMS = <li>Welding position with specific recommendations</li>
+
+ADVANTAGES:
+WELD_QUALITY_ITEMS = <li>Specific quality improvement with explanation</li>
+OPERATIONAL_BENEFIT_ITEMS = <li>Productivity or ease-of-use benefit</li>
+ECONOMIC_BENEFIT_ITEMS = <li>Cost savings or efficiency improvement</li>
+
+USAGE GUIDELINES:
+PARAMETER_ROWS = Recommended settings table
+<tr>
+  <td>3-6mm</td>
+  <td>12-15 L/min</td>
+  <td>10-15mm</td>
+  <td>Standard settings</td>
+</tr>
+SETUP_STEPS = <li>Specific setup instruction with parameters</li>
+OPTIMIZATION_TIPS = <li>Professional tip for best results</li>
+
+LIMITATIONS:
+NOT_RECOMMENDED_ITEMS = <li>Specific application or material where this gas shouldn't be used</li>
+SPECIAL_CONSIDERATION_ITEMS = <li>Important notes about specific uses</li>
+
+COMPARISON:
+VS_PURE_GAS_HEADING = "CORGON 18 vs Pure CO₂" (specific comparison)
+PURE_GAS_NAME = "Pure CO₂" or "Pure Argon"
+WHEN_TO_USE_PURE = Specific scenarios where pure gas is better
+LINDE_ADVANTAGE = Why the Linde mixed gas is superior
+
+COMPETITOR_COMPARISON_ROWS = Feature comparison table
+<tr>
+  <td>Arc Stability</td>
+  <td>Excellent</td>
+  <td>Good</td>
+  <td>Proprietary gas blend optimization</td>
+</tr>
+
+RELATED PRODUCTS:
+RELATED_PRODUCT_CARDS = Grid of other Linde products
+<div class="category-card">
+  <h4><a href="/products/corgon-10/">CORGON® 10</a></h4>
+  <p>Lower CO₂ for thin materials</p>
+  <div class="meta">Best for: 1-6mm steel</div>
+</div>
+
+LINDE SUPPORT:
+LINDE_SUPPORT_TEXT = Description of technical support available
+AVAILABILITY_ITEMS = <li>Cylinder sizes and delivery options</li>
+ORDERING_INFO_TEXT = How to order, minimum quantities, lead times
+
+RELATED GUIDES:
+RELATED_GUIDE_LINKS = <li><a href="/guides/...">Relevant welding guide</a></li>
+TECHNIQUE_GUIDE_LINKS = <li><a href="/guides/...">Welding technique using this gas</a></li>
+MATERIAL_GUIDE_LINKS = <li><a href="/guides/...">Material-specific guide</a></li>
+
+EXAMPLE USAGE:
+
+For CORGON 18 product page:
+- PRODUCT_VERDICT = "CORGON 18 is the industry standard for MAG welding of carbon and low-alloy steels"
+- PRODUCT_NAME = "CORGON® 18"
+- GAS_COMPOSITION_DISPLAY = "Ar + 18% CO₂"
+- PRIMARY_USES_HEADING = "Primary Applications"
+- PRIMARY_USE_ITEMS includes MAG welding of structural steel, pressure vessel fabrication, etc.
+- LINDE_ADVANTAGE = "Linde's precisely controlled gas mixture ensures consistent composition batch-to-batch, unlike generic suppliers"
+
+For CRONIGON 2 (stainless):
+- PRODUCT_VERDICT = "CRONIGON 2 is specifically formulated for MAG welding of austenitic stainless steels"
+- GAS_COMPOSITION_DISPLAY = "Ar + 2% CO₂"
+- NOT_RECOMMENDED_ITEMS includes carbon steel (oxidation risk), aluminum (incompatible process)
+
+For Spanish CORGON 18 page:
+- PRODUCT_VERDICT = "CORGON 18 es el estándar de la industria para soldadura MAG de aceros al carbono y de baja aleación"
+- PRODUCT_NAME = "CORGON® 18"
+- GAS_COMPOSITION_DISPLAY = "Ar + 18% CO₂"
+- LINDE_ADVANTAGE = "La mezcla de gases controlada con precisión de Linde asegura composición consistente lote tras lote, a diferencia de proveedores genéricos"
+-->
